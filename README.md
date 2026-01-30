@@ -73,5 +73,5 @@ The language model is a word-level LSTM implemented in PyTorch:
 
 | Before Generate | After Generate |
 |-----------------|----------------|
-| <img src="Web_Demo/before_generate.png" width="1000"/> |<img src="Web_Demo\after_generate.png" width="1000"/>   | 
+| <img src="Web_Demobe/fore_generate.png" width="300"/> |<img src="Web_Demo/after_generate.png" width="300"/>   | 
 
