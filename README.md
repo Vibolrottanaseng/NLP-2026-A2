@@ -8,10 +8,10 @@ This project implements a word-level Long Short-Term Memory (LSTM) language mode
 Task 1: Dataset Acquisition and Preparation
 Dataset
 
-*Title: Emma
+* Title: Emma
 
-*Author: Jane Austen
+* Author: Jane Austen
 
-*Source: Project Gutenberg, accessed via the NLTK Gutenberg corpus
+* Source: Project Gutenberg, accessed via the NLTK Gutenberg corpus
 
 
