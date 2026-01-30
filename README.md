@@ -5,7 +5,7 @@ This project implements a word-level Long Short-Term Memory (LSTM) language mode
 ---
 ### Dataset
 
-**Task 1**: Dataset Acquisition and Preparation
+## **Task 1**: Dataset Acquisition and Preparation
 
 * **Title**: Emma
 
@@ -26,7 +26,7 @@ The text is split into paragraphs and divided into:
 Splitting at the paragraph level avoids data leakage and ensures that validation and test sets contain unseen text.
 
 ---
-**Task 2**: Language Model Training and Evaluation
+## **Task 2**: Language Model Training and Evaluation
 
 ### Tokenization
 
@@ -69,7 +69,7 @@ The language model is a word-level LSTM implemented in PyTorch:
 * Perplexity measures how uncertain the model is when predicting the next word. Lower perplexity indicates better language modeling performance.
 
 ---
-**Task 2**: Web Demonstration
+## **Task 3**: Web Demonstration
 
 | Before Generate | After Generate |
 |-----------------|----------------|
