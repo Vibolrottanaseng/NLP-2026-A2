@@ -71,5 +71,7 @@ The language model is a word-level LSTM implemented in PyTorch:
 ---
 **Task 2**: Web Demonstration
 
-| Before Generate | ![](Web_Demo/before_generate.png) |
-| After Generate| ![](Web_Demo/before_generate.png)| 
+| Before Generate | After Generate |
+|-----------------|----------------|
+| <img src="Web_Demo/before_generate.png" width="120"/> |<img src="Web_Demo\after_generate.png" width="120"/>   | 
+
