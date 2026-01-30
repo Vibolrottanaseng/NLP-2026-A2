@@ -67,3 +67,9 @@ The language model is a word-level LSTM implemented in PyTorch:
 * The best model is selected based on validation perplexity
 * Evaluation Metric: Perplexity
 * Perplexity measures how uncertain the model is when predicting the next word. Lower perplexity indicates better language modeling performance.
+
+---
+**Task 2**: Web Demonstration
+
+| Before Generate | ![](Web_Demo/before_generate.png) |
+| After Generate| ![](Web_Demo/before_generate.png)| 
