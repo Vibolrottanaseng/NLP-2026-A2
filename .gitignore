@@ -9,6 +9,11 @@ wheels/
 # Virtual environments
 .venv
 
-.lock
-.toml
-.python-version
+# Lock files
+*.lock
+
+# Ignore env/config toml but keep pyproject
+*.toml
+!pyproject.toml
+
+*.python-version    
