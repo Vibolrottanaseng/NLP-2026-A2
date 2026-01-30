@@ -75,7 +75,6 @@ The language model is a word-level LSTM implemented in PyTorch:
 |-----------------|----------------|
 | <img src="Web_Demo/before_generate.png" width="300"/> |<img src="Web_Demo/after_generate.png" width="300"/>   | 
 
-----
 ### How to Run
 From the project directory::
 
