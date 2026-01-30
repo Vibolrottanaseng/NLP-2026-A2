@@ -1,11 +1,16 @@
-## NLP A2 st126425
-### Dataset
-We use *Alice’s Adventures in Wonderland* by Lewis Carroll,
-sourced from Project Gutenberg.
+# NLP A2 st126425
+## Language Model Using LSTM – Emma (Jane Austen)
 
-Project Gutenberg provides public-domain literary works.
-The dataset was selected because it is text-rich, narrative-based,
-and suitable for training a language model to learn story-like
-text generation.
+This project implements a word-level Long Short-Term Memory (LSTM) language model trained on Emma by Jane Austen (NLTK Datasets). According to the assingment this work divided into 3 main task. Data Aquisition, Model Training and Evaluation, Web base demonstraion.
 
-Source: https://www.gutenberg.org/ebooks/11
+```
+Task 1: Dataset Acquisition and Preparation
+Dataset
+
+*Title: Emma
+
+*Author: Jane Austen
+
+*Source: Project Gutenberg, accessed via the NLTK Gutenberg corpus
+
+
