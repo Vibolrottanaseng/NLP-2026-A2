@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NLP A2 st126425
 ## Language Model Using LSTM – Emma (Jane Austen)
 
