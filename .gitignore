@@ -16,5 +16,6 @@ wheels/
 *.toml
 !pyproject.toml
 
-*.python-version    
+*.python-version
+
 pyproject.toml
