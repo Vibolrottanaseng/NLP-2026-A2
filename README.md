@@ -27,5 +27,14 @@ The text is split into paragraphs and divided into:
 
 Splitting at the paragraph level avoids data leakage and ensures that validation and test sets contain unseen text.
 
-
 ---
+**Task 2**: Language Model Training and Evaluation
+
+### Tokenization
+
+A custom regular-expression-based tokenizer is used instead of torchtext. The tokenizer:
+
+* Converts text to lowercase
+* Separates words and punctuation
+* Preserves contractions
+* This produces a clean sequence of word tokens for training.
