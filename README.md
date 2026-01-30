@@ -20,9 +20,7 @@ The dataset consists of the full text of the novel *Emma*. Long-form text-rich i
 The text is split into paragraphs and divided into:
 
 * **80%** Training
-
 * **10%** Validation
-
 * **10%** Test
 
 Splitting at the paragraph level avoids data leakage and ensures that validation and test sets contain unseen text.
@@ -44,41 +42,28 @@ A custom regular-expression-based tokenizer is used instead of torchtext. The to
 * The vocabulary is built from the training set only.
 
 * Special tokens are included:
-
     * `<unk>` for unknown words
-
     * `<eos>` for end-of-sentence
 
-Rare words below a frequency threshold are mapped to <unk>.
+* Rare words below a frequency threshold are mapped to `<unk>`.
 
-Model Architecture
+### Model Architecture
 
 The language model is a word-level LSTM implemented in PyTorch:
+* Embedding layer for word representations
+* Two-layer LSTM for modeling sequential dependencies
+* Linear output layer to predict next-word probabilities
 
-Embedding layer for word representations
+* Hyperparameters:
+    * Embedding dimension: 1024
+    * Hidden dimension: 1024
+    * Number of LSTM layers: 2
 
-Two-layer LSTM for modeling sequential dependencies
+### Training
 
-Linear output layer to predict next-word probabilities
-
-Hyperparameters:
-
-Embedding dimension: 200
-
-Hidden dimension: 512
-
-Number of LSTM layers: 2
-
-Training
-
-Loss function: Cross-entropy loss
-
-Optimizer: Adam
-
-Gradient clipping is applied for stability
-
-The best model is selected based on validation perplexity
-
-Evaluation Metric: Perplexity
-
-Perplexity measures how uncertain the model is when predicting the next word. Lower perplexity indicates better language modeling performance.
+* Loss function: Cross-entropy loss
+* Optimizer: Adam
+* Gradient clipping is applied for stability
+* The best model is selected based on validation perplexity
+* Evaluation Metric: Perplexity
+* Perplexity measures how uncertain the model is when predicting the next word. Lower perplexity indicates better language modeling performance.
