@@ -38,3 +38,47 @@ A custom regular-expression-based tokenizer is used instead of torchtext. The to
 * Separates words and punctuation
 * Preserves contractions
 * This produces a clean sequence of word tokens for training.
+
+### Vocabulary Construction
+
+* The vocabulary is built from the training set only.
+
+* Special tokens are included:
+
+ * * <unk> for unknown words
+
+ * * <eos> for end-of-sentence
+
+Rare words below a frequency threshold are mapped to <unk>.
+
+Model Architecture
+
+The language model is a word-level LSTM implemented in PyTorch:
+
+Embedding layer for word representations
+
+Two-layer LSTM for modeling sequential dependencies
+
+Linear output layer to predict next-word probabilities
+
+Hyperparameters:
+
+Embedding dimension: 200
+
+Hidden dimension: 512
+
+Number of LSTM layers: 2
+
+Training
+
+Loss function: Cross-entropy loss
+
+Optimizer: Adam
+
+Gradient clipping is applied for stability
+
+The best model is selected based on validation perplexity
+
+Evaluation Metric: Perplexity
+
+Perplexity measures how uncertain the model is when predicting the next word. Lower perplexity indicates better language modeling performance.
