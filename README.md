@@ -45,9 +45,9 @@ A custom regular-expression-based tokenizer is used instead of torchtext. The to
 
 * Special tokens are included:
 
- * * <unk> for unknown words
+ * <unk> for unknown words
 
- * * <eos> for end-of-sentence
+ * <eos> for end-of-sentence
 
 Rare words below a frequency threshold are mapped to <unk>.
 
