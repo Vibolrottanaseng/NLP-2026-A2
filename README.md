@@ -75,3 +75,19 @@ The language model is a word-level LSTM implemented in PyTorch:
 |-----------------|----------------|
 | <img src="Web_Demo/before_generate.png" width="300"/> |<img src="Web_Demo/after_generate.png" width="300"/>   | 
 
+----
+### How to Run
+From the project directory::
+
+```bash
+cd app
+python app.py
+```
+
+Then Open:
+
+```bash
+http://127.0.0.1:5000
+```
+
+
